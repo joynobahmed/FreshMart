@@ -1,0 +1,21 @@
+nav{
+    /* border: 2px solid red; */
+    padding: .3rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ddd;
+    /* gap: 2rem; */
+}
+.nav-items{
+    border: none;
+    margin: none;
+    background-color: rgb(219, 247, 255);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.nav-items:hover{
+    background-color: red;
+    /* transition: ; */
+}
