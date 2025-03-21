@@ -8,11 +8,15 @@ const loadHome = () => {
         const slideTitle = document.getElementById("slide-title");
         const slideText = document.getElementById("slide-text");
     
-        if (currentIndex !== -1) {
-            slide.classList.add("exit");
-            setTimeout(() => {
-                slide.classList.remove("exit");
-            }, 1000);
+        try {
+            if (currentIndex !== -1) {
+                slide.classList.add("exit");
+                setTimeout(() => {
+                    slide.classList.remove("exit");
+                }, 1000);
+            }
+        } catch (error) {
+            console.log(error)
         }
     
         currentIndex = Math.floor(Math.random() * product_list.length);

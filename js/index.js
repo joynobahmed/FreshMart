@@ -13,6 +13,8 @@ document.addEventListener("DOMContentLoaded", function () {
             }
             else if(page === "home"){
                 loadHome();
+            }else if(page === "contact"){
+                loadContact();
             }
         } catch (error) {
             innerPage.innerHTML = "<p>Error loading content.</p>";

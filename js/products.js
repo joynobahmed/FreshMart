@@ -1,5 +1,4 @@
 const loadProducts = () => {
-    console.log("called");
     const productListDiv = document.getElementById("product-list");
     if (!productListDiv) return;
 
@@ -26,7 +25,7 @@ const loadProducts = () => {
             <p>Price: ${product.price} (BDT)</p>
             <p>Rating: ${product.rating}⭐</p>
             <p>${product.description}</p>
-            <button class="buy-now-btn" onclick="buyNow('${product.name}', ${product.price})">Buy Now</button>
+            <button class="buy-now-btn" onclick="buyNow('${product.name}', ${Number(product.price.split("/")[0].trim())})">Buy Now</button>
         </div>
     `).join("");
 
@@ -42,5 +41,6 @@ const attachProductFilterListeners = () => {
 };
 
 const buyNow = (productName, productPrice) => {
+    console.log(productName ,productPrice)
     alert(`You have selected "${productName}" for ${productPrice} BDT.`);
 }
