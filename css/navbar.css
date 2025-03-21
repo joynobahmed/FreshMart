@@ -37,8 +37,12 @@
 }
 
 .nav-items.active {
-    background: #1e7e34; /* Darker green for active */
+    background: #1e7e34;
     color: white;
     font-weight: bold;
 }
 
+.navbar h1{
+    font-size: xx-large;
+    color: rgb(255, 209, 122);
+}
