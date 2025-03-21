@@ -17,7 +17,8 @@ const loadProducts = () => {
         
         return matchesCategory && matchesPrice;
     });
-
+    
+    
     productListDiv.innerHTML = filteredProducts.map(product => `
         <div class="product-card">
             <img src="${product.image}" alt="${product.name}" width="100">
@@ -25,8 +26,11 @@ const loadProducts = () => {
             <p>Price: ${product.price} (BDT)</p>
             <p>Rating: ${product.rating}⭐</p>
             <p>${product.description}</p>
+            <button class="buy-now-btn" onclick="buyNow('${product.name}', ${product.price})">Buy Now</button>
         </div>
     `).join("");
+
+
 };
 const attachProductFilterListeners = () => {
     document.getElementById("veg-filter")?.addEventListener("change", loadProducts);
@@ -36,3 +40,7 @@ const attachProductFilterListeners = () => {
         loadProducts();
     });
 };
+
+const buyNow = (productName, productPrice) => {
+    alert(`You have selected "${productName}" for ${productPrice} BDT.`);
+}
