@@ -1,154 +1,130 @@
 const product_list = [
     {
-        image: "./assets/mango.webp",
-        name: "Tomato",
-        price: 5,
-        rating: 4.3,
-        description: "Fresh red tomatoes.",
-        category: "vegetables"
+        image: "./assets/products/Beans.png",
+        name: "Beans",
+        price: "60/kg",
+        rating: 4.5,
+        description: "Fresh Green Beans.",
+        category: "vegetable"
     },
     {
-        image: "./assets/mango.webp",
+        image: "./assets/products/Potato.png",
+        name: "Potato",
+        price: "80/kg",
+        rating: 4.5,
+        description: "Fresh Potato.",
+        category: "vegetable"
+    },
+    {
+        image: "./assets/products/Carrot.webp",
         name: "Carrot",
-        price: 7,
+        price: "80/kg",
         rating: 4.5,
-        description: "Crunchy and sweet carrots.",
-        category: "vegetables"
+        description: "Crunchy and Sweet Carrots.",
+        category: "vegetable"
     },
     {
-        image: "./assets/mango.webp",
-        name: "Apple",
-        price: 15,
-        rating: 4.7,
-        description: "Crisp and juicy apples.",
-        category: "fruits"
+        image: "./assets/products/Cauliflower.png",
+        name: "Cauliflower",
+        price: "30/kg",
+        rating: 5,
+        description: "Fresh Cauliflower.",
+        category: "vegetable"
     },
     {
-        image: "./assets/mango.webp",
-        name: "Banana",
-        price: 10,
-        rating: 4.6,
-        description: "Ripe and naturally sweet bananas.",
-        category: "fruits"
+        image: "./assets/products/Tomato.webp",
+        name: "Tomato",
+        price: "120/kg",
+        rating: 5,
+        description: "Fresh Sweet Tomato.",
+        category: "vegetable"
     },
     {
-        image: "./assets/mango.webp",
-        name: "Orange",
-        price: 12,
-        rating: 4.8,
-        description: "Rich in Vitamin C, fresh oranges.",
-        category: "fruits"
-    },
-    {
-        image: "./assets/mango.webp",
+        image: "./assets/products/Cucumber.png",
         name: "Cucumber",
-        price: 6,
-        rating: 4.4,
-        description: "Cool and refreshing cucumbers.",
-        category: "vegetables"
+        price: "60/kg",
+        rating: 4.5,
+        description: "Fresh Cucumber.",
+        category: "vegetable"
     },
     {
-        image: "./assets/mango.webp",
+        image: "./assets/products/Green Chili.png",
+        name: "Green Chili",
+        price: "100/kg",
+        rating: 4.5,
+        description: "Fresh Green Chili.",
+        category: "vegetable"
+    },
+    {
+        image: "./assets/products/Onion.png",
+        name: "Onion",
+        price: "80/kg",
+        rating: 4.5,
+        description: "Fresh Onion.",
+        category: "vegetable"
+    },
+    {
+        image: "./assets/products/Ginger.png",
+        name: "Ginger",
+        price: "200/kg",
+        rating: 4.5,
+        description: "Fresh Ginger.",
+        category: "vegetable"
+    },
+    {
+        image: "./assets/products/Apple.png",
+        name: "Apple",
+        price: "80/kg",
+        rating: 4.5,
+        description: "Crunchy and Sweet Apple.",
+        category: "fruit"
+    },
+    {
+        image: "./assets/products/Orange.png",
+        name: "Orange",
+        price: "300/kg",
+        rating: 4.5,
+        description: "Fresh Orange.",
+        category: "fruit"
+    },
+    {
+        image: "./assets/products/Banana.png",
+        name: "Banana",
+        price: "100/Dozen",
+        rating: 4.5,
+        description: "Fresh Sweet Banana.",
+        category: "fruit"
+    },
+    {
+        image: "./assets/products/Grape.png",
+        name: "Grape",
+        price: "200/kg",
+        rating: 4.5,
+        description: "Fresh Grape.",
+        category: "fruit"
+    },
+    {
+        image: "./assets/products/Strawberry.png",
         name: "Strawberry",
-        price: 18,
-        rating: 4.9,
-        description: "Sweet and delicious strawberries.",
-        category: "fruits"
-    },
-    {
-        image: "./assets/mango.webp",
-        name: "Broccoli",
-        price: 20,
+        price: "300/kg",
         rating: 4.5,
-        description: "Healthy and green broccoli.",
-        category: "vegetables"
+        description: "Fresh Sweet Strawberry.",
+        category: "fruit"
     },
     {
-        image: "./assets/mango.webp",
-        name: "Mango",
-        price: 25,
-        rating: 5,
-        description: "Sweet and juicy mangoes.",
-        category: "fruits"
-    },
-    {
-        image: "./assets/mango.webp",
-        name: "Grapes",
-        price: 22,
-        rating: 4.7,
-        description: "Fresh and seedless grapes.",
-        category: "fruits"
-    },
-    {
-        image: "./assets/mango.webp",
-        name: "Pineapple",
-        price: 30,
-        rating: 4.6,
-        description: "Tropical and juicy pineapples.",
-        category: "fruits"
-    },
-    {
-        image: "./assets/mango.webp",
-        name: "Spinach",
-        price: 9,
-        rating: 4.5,
-        description: "Healthy and leafy spinach.",
-        category: "vegetables"
-    },
-    {
-        image: "./assets/mango.webp",
-        name: "Lettuce",
-        price: 8,
-        rating: 4.4,
-        description: "Fresh and crunchy lettuce.",
-        category: "vegetables"
-    },
-    {
-        image: "./assets/mango.webp",
+        image: "./assets/products/Watermelon.png",
         name: "Watermelon",
-        price: 35,
-        rating: 4.8,
-        description: "Refreshing and hydrating watermelon.",
-        category: "fruits"
-    },
-    {
-        image: "./assets/mango.webp",
-        name: "Peach",
-        price: 20,
-        rating: 4.7,
-        description: "Soft and sweet peaches.",
-        category: "fruits"
-    },
-    {
-        image: "./assets/mango.webp",
-        name: "Zucchini",
-        price: 14,
-        rating: 4.3,
-        description: "Versatile and healthy zucchini.",
-        category: "vegetables"
-    },
-    {
-        image: "./assets/mango.webp",
-        name: "Pomegranate",
-        price: 28,
-        rating: 4.9,
-        description: "Rich in antioxidants, juicy pomegranate.",
-        category: "fruits"
-    },
-    {
-        image: "./assets/mango.webp",
-        name: "Blueberry",
-        price: 40,
-        rating: 5,
-        description: "Nutritious and sweet blueberries.",
-        category: "fruits"
-    },
-    {
-        image: "./assets/mango.webp",
-        name: "Bell Pepper",
-        price: 16,
+        price: "50/kg",
         rating: 4.5,
-        description: "Colorful and crunchy bell peppers.",
-        category: "vegetables"
-    }
+        description: "Watermelon.",
+        category: "fruit"
+    },
+    {
+        image: "./assets/products/Mango.png",
+        name: "Mango",
+        price: "100/kg",
+        rating: 4.5,
+        description: "Fresh Sweet Mango.",
+        category: "fruit"
+    },
 ];

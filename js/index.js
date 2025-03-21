@@ -8,6 +8,10 @@ document.addEventListener("DOMContentLoaded", function () {
             innerPage.innerHTML = html;
             if (page === "products") {
                 loadProducts();
+                attachProductFilterListeners();
+            }
+            else if(page === "home"){
+                loadHome();
             }
         } catch (error) {
             innerPage.innerHTML = "<p>Error loading content.</p>";

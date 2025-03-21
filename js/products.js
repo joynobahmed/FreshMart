@@ -9,10 +9,11 @@ const loadProducts = () => {
 
     const filteredProducts = product_list.filter(product => {
         const matchesCategory = (!vegChecked && !fruitChecked) || 
-            (vegChecked && product.category === "veg") || 
+            (vegChecked && product.category === "vegetable") || 
             (fruitChecked && product.category === "fruit");
 
-        const matchesPrice = product.price <= maxPrice;
+            const price = Number(product.price.split("/")[0].trim())
+        const matchesPrice = price <= maxPrice;
         
         return matchesCategory && matchesPrice;
     });
@@ -21,10 +22,17 @@ const loadProducts = () => {
         <div class="product-card">
             <img src="${product.image}" alt="${product.name}" width="100">
             <h3>${product.name}</h3>
-            <p>Price: $${product.price}</p>
+            <p>Price: ${product.price} (BDT)</p>
             <p>Rating: ${product.rating}⭐</p>
             <p>${product.description}</p>
         </div>
     `).join("");
 };
-loadProducts();
+const attachProductFilterListeners = () => {
+    document.getElementById("veg-filter")?.addEventListener("change", loadProducts);
+    document.getElementById("fruit-filter")?.addEventListener("change", loadProducts);
+    document.getElementById("price-range")?.addEventListener("input", function () {
+        document.getElementById("price-value").textContent = this.value;
+        loadProducts();
+    });
+};
