@@ -2,7 +2,7 @@
 const loadHome = () => {    
     let currentIndex = -1;
     
-    function showNextSlide() {
+    const showNextSlide = () => {
         const slide = document.querySelector(".slide");
         const slideImg = document.getElementById("slide-img");
         const slideTitle = document.getElementById("slide-title");
@@ -26,7 +26,7 @@ const loadHome = () => {
     
         setTimeout(() => {
             slide.classList.remove("active");
-            showNextSlide();
+            setTimeout(() => showNextSlide(), 1000);
         }, 3000);
     }
     

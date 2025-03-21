@@ -1,4 +1,12 @@
-.top-bar{
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Sans-serif;
+}.top-bar{
     padding: 1rem 0;
 }
 .inner-page {
