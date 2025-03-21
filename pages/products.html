@@ -1,0 +1,22 @@
+<h2>Products</h2>
+<div class="products-container">
+    <aside class="filters">
+        <h3>Filter by Category</h3>
+        <label><input type="checkbox" id="veg-filter" value="veg"> Vegetables</label><br>
+        <label><input type="checkbox" id="fruit-filter" value="fruit"> Fruits</label>
+
+        <h3>Filter by Price</h3>
+        <input type="range" id="price-range" min="0" max="100" step="1">
+        <p>Max Price: $<span id="price-value">100</span></p>
+    </aside>
+
+    <div id="product-list" class="product-list"></div>
+</div>
+<script>
+    document.getElementById("veg-filter").addEventListener("change", loadProducts);
+    document.getElementById("fruit-filter").addEventListener("change", loadProducts);
+    document.getElementById("price-range").addEventListener("input", function () {
+        document.getElementById("price-value").textContent = this.value;
+        loadProducts();
+    });
+</script>

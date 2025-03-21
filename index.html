@@ -5,19 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/product.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <title>Fresh Mart</title>
 </head>
 <body>
-    <div class="top-bar">
-        <img src="./assets/logo.png" height="75" alt="logo image">
-    </div>
-    <nav>
-        <button id="home-nav-btn" class="nav-items">Home</button>
-        <button id="products-nav-btn" class="nav-items">Products</button>
-        <button id="concact-nav-btn" class="nav-items">Contact US</button>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./assets/logo.png" height="50" alt="Fresh Mart Logo">
+        </div>
+        <div class="nav-buttons">
+            <button id="home-nav-btn" class="nav-items">Home</button>
+            <button id="products-nav-btn" class="nav-items">Products</button>
+            <button id="contact-nav-btn" class="nav-items">Contact US</button>
+        </div>
     </nav>
+
+    <div class="inner-page"></div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Fresh Mart</h3>
+                <p>Your go-to store for fresh groceries at great prices.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Fresh Mart. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    
 </body>
-<script src="./js/dummy_products.js"></script>
+<script src="./js/product_list.js"></script>
 <script src="./js/products.js"></script>
 <script src="./js/index.js"></script>
 </html>

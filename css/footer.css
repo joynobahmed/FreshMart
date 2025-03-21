@@ -1,0 +1,26 @@
+.footer {
+    background: #28a745;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 5px 0;
+}
+
+.footer-section {
+    max-width: 400px;
+    font-size: 14px;
+}
+
+.footer-bottom {
+    background: #1e7e34;
+    padding: 8px 0;
+    font-size: 12px;
+}

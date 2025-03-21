@@ -1,3 +1,10 @@
 .top-bar{
     padding: 1rem 0;
 }
+.inner-page {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    min-height: 200px;
+}
+

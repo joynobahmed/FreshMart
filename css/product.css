@@ -1,0 +1,34 @@
+.products-container {
+    display: flex;
+    gap: 20px;
+}
+
+.filters {
+    width: 250px;
+    padding: 15px;
+    background: #f4f4f4;
+    border-radius: 8px;
+}
+
+.filters h3 {
+    margin-bottom: 10px;
+}
+
+.filters input[type="range"] {
+    width: 100%;
+}
+
+.product-list {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    background: white;
+}
